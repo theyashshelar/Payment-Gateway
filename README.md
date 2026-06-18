@@ -1,20 +1,21 @@
-# 💳 Payment Gateway 
+# 💳 Payment Gateway - Razorpay Integration using Spring Boot
 
-A full-stack Payment Gateway application built using **Java Spring Boot**, featuring a modern course enrollment checkout page, payment order management, email notifications, and database integration.
+A full-stack Payment Gateway application built using **Java Spring Boot** and **Razorpay**. The application allows users to enroll in a Java Full Stack course, complete payments through Razorpay Checkout, store payment details in a database, and receive automated email confirmations after successful transactions.
 
 ---
 
 ## 🚀 Features
 
-* Course enrollment checkout page
-* Payment order creation and processing
-* Email confirmation after successful payment
+* Razorpay Payment Gateway Integration
+* Course Enrollment Checkout Page
+* Payment Order Creation using Razorpay API
+* Secure Razorpay Checkout Experience
+* Automated Email Confirmation Service
+* Payment Details Storage in Database
 * Spring Boot REST APIs
-* Database integration using Spring Data JPA
-* Responsive frontend using HTML, CSS, and JavaScript
-* Professional Java Full Stack course landing page
-* Payment success workflow
-* Clean layered architecture (Controller, Service, Repository, Entity)
+* Responsive Frontend using HTML, CSS and JavaScript
+* Clean Layered Architecture
+* Real-world Payment Workflow Implementation
 
 ---
 
@@ -25,8 +26,9 @@ A full-stack Payment Gateway application built using **Java Spring Boot**, featu
 * Java
 * Spring Boot
 * Spring Data JPA
-* Maven
+* Razorpay Java SDK
 * Java Mail Sender
+* Maven
 
 ### Frontend
 
@@ -38,11 +40,12 @@ A full-stack Payment Gateway application built using **Java Spring Boot**, featu
 
 * MySQL / PostgreSQL
 
-### Tools
+### Tools & Platforms
 
 * IntelliJ IDEA
 * Git
 * GitHub
+* Razorpay Dashboard
 
 ---
 
@@ -62,20 +65,21 @@ Payment-Gateway
 │   ├── main
 │   │   ├── java
 │   │   │   └── com.project.paymentgateway
-│   │   │       ├── Controller
-│   │   │       │   └── PaymentController.java
-│   │   │       │
-│   │   │       ├── Entity
-│   │   │       │   └── PaymentOrder.java
-│   │   │       │
-│   │   │       ├── Repository
-│   │   │       │   └── PaymentRepository.java
-│   │   │       │
-│   │   │       ├── Service
-│   │   │       │   ├── PaymentService.java
-│   │   │       │   └── EmailService.java
-│   │   │       │
-│   │   │       └── PaymentGatewayApplication.java
+│   │   │
+│   │   │   ├── Controller
+│   │   │   │   └── PaymentController.java
+│   │   │   │
+│   │   │   ├── Entity
+│   │   │   │   └── PaymentOrder.java
+│   │   │   │
+│   │   │   ├── Repository
+│   │   │   │   └── PaymentRepository.java
+│   │   │   │
+│   │   │   ├── Service
+│   │   │   │   ├── PaymentService.java
+│   │   │   │   └── EmailService.java
+│   │   │   │
+│   │   │   └── PaymentGatewayApplication.java
 │   │   │
 │   │   └── resources
 │   │       ├── application.properties
@@ -84,59 +88,94 @@ Payment-Gateway
 │   │
 │   └── test
 │
-└── pom.xml
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+└── README.md
 ```
 
 ---
 
-## 🔄 Application Flow
+## ⚙️ How It Works
 
 1. User enters personal details.
-2. User reviews course information.
-3. User proceeds with payment.
-4. Payment order is created via Spring Boot API.
-5. Payment is processed successfully.
-6. User receives confirmation message.
-7. Email notification is sent automatically.
-8. Payment details are stored in the database.
+2. User reviews the Java Full Stack course information.
+3. User clicks the payment button.
+4. Spring Boot creates a Razorpay order.
+5. Razorpay Checkout window opens.
+6. User completes payment securely.
+7. Payment details are stored in the database.
+8. Success response is generated.
+9. Confirmation email is sent automatically.
+10. User receives enrollment confirmation.
 
 ---
 
-## 📸 Screenshots
+## 📸 Application Screens
 
 ### Course Checkout Page
 
-* Modern Java Full Stack Course UI
-* User Details Form
+* User Information Form
+* Course Details Section
 * Payment Summary
+* Professional Java Course Banner
 
-### Payment Window
+### Razorpay Checkout
 
-* Secure Payment Options
-* Card / Net Banking / Wallet Support
+* Secure Payment Processing
+* Card Payments
+* Net Banking
+* Wallet Support
+* UPI Support
 
 ### Payment Success
 
-* Confirmation Popup
+* Enrollment Confirmation Popup
 * Automated Email Notification
 
 ---
 
-## 🎯 Future Enhancements
+## 🔐 Security Features
 
-* Razorpay Integration
-* Stripe Integration
-* Payment Status Tracking
-* JWT Authentication
+* Razorpay Secure Checkout
+* Server-side Order Creation
+* Database Persistence
+* Email Verification Workflow
+* API-driven Architecture
+
+---
+
+## 🎯 Learning Outcomes
+
+This project demonstrates:
+
+* Payment Gateway Integration
+* REST API Development
+* Spring Boot Backend Development
+* Database Integration using JPA
+* Email Service Implementation
+* Frontend & Backend Communication
+* Real-world Project Architecture
+
+---
+
+## 🚀 Future Enhancements
+
+* Razorpay Payment Signature Verification
+* Webhook Integration
+* Refund Processing
+* Payment History Dashboard
+* User Authentication & Authorization
 * Admin Dashboard
-* Course Management Module
-* Invoice Generation PDF
 * Docker Deployment
+* Cloud Deployment (AWS)
 
 ---
 
 ## 👨‍💻 Author
 
-**Yash Shelar**
+### Yash Shelar
 
 GitHub: https://github.com/theyashshelar
+
+---
