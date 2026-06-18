@@ -1,4 +1,4 @@
-# 💳 Payment Gateway - Java Full Stack Course Checkout System
+# 💳 Payment Gateway 
 
 A full-stack Payment Gateway application built using **Java Spring Boot**, featuring a modern course enrollment checkout page, payment order management, email notifications, and database integration.
 
@@ -138,7 +138,5 @@ Payment-Gateway
 ## 👨‍💻 Author
 
 **Yash Shelar**
-
-Java Backend Developer | Spring Boot Developer
 
 GitHub: https://github.com/theyashshelar
