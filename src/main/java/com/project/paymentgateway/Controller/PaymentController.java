@@ -5,13 +5,11 @@ import com.project.paymentgateway.Service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api/payment")
+@CrossOrigin
+@RequestMapping("/api/payment")
 public class PaymentController {
 
     @Autowired
@@ -26,5 +24,15 @@ public class PaymentController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body("Error creating order");
         }
+    }
+
+    @PostMapping("/update-order")
+    public ResponseEntity<String> updateOrderStatus(@RequestParam String paymentId,
+                                                    @RequestParam String orderId,
+                                                    @RequestParam String status)
+    {
+        paymentService.updateOrderStatus(paymentId,orderId,status);
+        System.out.println("order place successfully....");
+        return ResponseEntity.ok("Order updated Successfully...");
     }
 }
